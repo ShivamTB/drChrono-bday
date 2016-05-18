@@ -32,7 +32,12 @@
                         <img src="{% static "images/rotating_card_thumb3.png" %}"/>
                     </div>
                     <div class="user">
+                        {% if patient.patient_photo %}
                         <img class="img-circle" src="{{ patient.patient_photo }}"/>
+                        {% else %}
+                        <img class="img-circle" src="{% static "images/anonymous.jpg" %}"/>
+                        {% endif %}
+                        
                     </div>
                     <div class="content">
                         <div class="main">

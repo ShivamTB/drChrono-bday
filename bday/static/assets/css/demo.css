@@ -323,11 +323,11 @@
     line-height: 40px;
 }
 
-.logo {
+.logo img{
     height: 43px;
     width: 150px;
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 0px;
 }
 
